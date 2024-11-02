@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>essyMeet</title>
+    <link rel="icon" href="Capture.PNG" type="image/png">
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="login">
+    <div class="logo">
+        <img src="Capture.PNG" alt="" srcset="">
+    </div>
+  
+        <form method="post" id="form">
+            <input type="text" class="username" placeholder="Enter your username" required>
+
+            <div class="sub-button">
+                <button type="submit">Join meet</button>
+            </div>
+        </form>
+    </div>
+
+   <div class="container" style="display: none;">
+    <h1>EssyMeet</h1>
+
+  
+    <div class="messageContainer">
+
+    </div>
+    <form action="" method="post" id="send-message">
+        <input type="text" name="" id="input-message" class="input">
+        <button class="send-message">
+            <i class="fab fa-telegram-plane"></i>
+        </button>        
+    </form>
+</div>
+    <script defer src="https://essymeet.onrender.com/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

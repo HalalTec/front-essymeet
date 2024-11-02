@@ -1,0 +1,169 @@
+body{
+        padding: 0;
+        margin: 0;
+        height: fit-content;
+}
+
+html, body {
+    overflow: hidden;
+    clear: both;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.logo { 
+        justify-content: center;
+        text-align: center;
+}
+
+.container{
+                border:3px solid #534D08;
+                width: 50%;
+                padding:20px;
+                padding-left:30px;
+                height: fit-content;
+                border-radius: 20px;
+                box-sizing: border-box;
+                overflow-y: hidden;
+
+
+}
+/* Chat Container */
+.messageContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+h1{
+        text-align:center;
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:#534D08;
+        font-style: italic;
+}
+
+.login form{
+            justify-content: center;
+            padding-left:30px;
+            display: block;
+
+}
+
+.login input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #534D08;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: block;
+    outline: #534D08;
+
+
+}
+
+.login button {
+                width: 40%;
+                padding:10px;
+                color:white;
+                background-color: #534D08;
+                border:none;
+                border-radius: 3px;
+                cursor: pointer;
+}
+
+
+
+.input{
+        border-radius:20px;
+        width: 100%;
+        outline: #534D08;
+
+}
+
+/* Message Bubble Common Styles */
+.message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    display: inline-block;
+    word-wrap: break-word;
+    position: relative;
+}
+
+/* Sender (User) Message */
+.sender {
+    margin-left:50px;
+    background-color: #534D08;
+    color: white;
+    border-top-right-radius: 0;
+    display: block;
+
+}
+
+/* Receiver (Other Person) Message */
+.receiver {
+    align-self: flex-start;
+    background-color: #d1ceac;
+    color: #333;
+    border-top-left-radius: 0;
+    display: block;
+
+}
+
+/* Timestamp Style */
+.message .timestamp {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
+
+/* Adding Spacing between Bubbles */
+.message-container .message + .message {
+    margin-top: 10px;
+}
+
+
+.send-message {
+    background-color:#534D08; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin-left:10px
+}
+
+form{
+        margin-top:20px;
+        display: inline-flex;
+        width: 100%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+}
